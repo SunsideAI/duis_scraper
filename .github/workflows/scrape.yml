@@ -26,8 +26,8 @@ jobs:
       - name: Run Scraper
         env:
           AIRTABLE_TOKEN: ${{ secrets.AIRTABLE_TOKEN }}
-          AIRTABLE_BASE: ${{ secrets.AIRTABLE_BASE_DUIS }}
-          AIRTABLE_TABLE_ID: ${{ secrets.AIRTABLE_TABLE_ID_DUIS }}
+          AIRTABLE_BASE: ${{ secrets.AIRTABLE_BASE }}
+          AIRTABLE_TABLE_ID: ${{ secrets.AIRTABLE_TABLE_ID }}
         run: |
           python duis_v2_airtable_replace.py
       
